@@ -10,7 +10,7 @@ login({email: "cse.thanhcong@gmail.com", password: "#))*@)!!"}, function callbac
         console.log(message.threadID);
         if(!answeredThreads.hasOwnProperty(message.threadID)){
             answeredThreads[message.threadID] = true;
-            api.sendMessage("BOT: I'm currently not available. I will reply you later. Thanks!", message.threadID);
+            api.sendMessage("BOT: I'm not currently available. I will reply you later. Thanks!", message.threadID);
         }
     });
 });
